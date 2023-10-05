@@ -1,0 +1,27 @@
+{
+  "name": "apiappdelivery",
+  "version": "1.0.0",
+  "description": "Backend del app de delivery",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "nodemon server.js"
+  },
+  "keywords": [
+    "delivery",
+    "nodejs"
+  ],
+  "author": "JimCode",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^3.0.1",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0"
+  }
+}
