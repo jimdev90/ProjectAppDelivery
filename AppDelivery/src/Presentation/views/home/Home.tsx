@@ -7,6 +7,7 @@ import { RootStackParamList } from '../../../../App';
 import useViewModel from './ViewModel';
 import { CustomTextInput } from '../../components/CustomTextInput';
 import styles from './Styles';
+import {image} from '../../../assets'
 
 export const HomeScreen = () => {
 
@@ -25,16 +26,16 @@ export const HomeScreen = () => {
         <View style={styles.container}>
             <Image
                 style={styles.imageBackground}
-                source={require('../../../../assets/chef.jpg')}
+                source={image.BgChef}
             />
             <View style={styles.logoContainer}>
-                <Image source={require('../../../../assets/logo.png')} style={styles.logoImage} />
+                <Image source={image.IconLogo} style={styles.logoImage} />
                 <Text style={styles.logoText}>FOOD APP</Text>
             </View>
             <View style={styles.form}>
                 <Text style={styles.formText}>INGRESAR</Text>
                 <CustomTextInput
-                    image={require('../../../../assets/email.png')}
+                    image={image.IconEmail}
                     placeholder='Correo Electrónico'
                     keyboardType='email-address'
                     property='email'
@@ -43,7 +44,7 @@ export const HomeScreen = () => {
                 />
 
                 <CustomTextInput
-                    image={require('../../../../assets/password.png')}
+                    image={image.IconPassword}
                     placeholder='Contraseña'
                     keyboardType='default'
                     property='password'
